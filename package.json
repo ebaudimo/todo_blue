@@ -1,0 +1,28 @@
+{
+  "name": "todo_bleu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint ./app/components/",
+    "test": "./node_modules/karma/bin/karma start",
+    "watch-lint": "./node_modules/.bin/npm-scripts-watcher",
+    "serve": "browser-sync start --server --startPath 'app/' --files 'app/css/*.css, app/component/*.js'",
+    "watch": "./node_modules/.bin/npm-run-all --parallel watch-lint test",
+    "start": "./node_modules/.bin/npm-run-all --parallel watch serve"
+  },
+  "watch": {
+    "app/components/**/*.js": [
+      "lint"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.17.5",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.0.2",
+    "npm-run-all": "^3.1.1",
+    "npm-scripts-watcher": "^1.0.2"
+  }
+}

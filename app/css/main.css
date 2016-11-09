@@ -1,0 +1,25 @@
+/* SETTINGS */
+:root{
+    --color-bg:#F5F5F5;
+    --color-text:#2A2A2A;
+}
+
+/* GENERICS */
+
+html,body{
+    height:100%;
+    padding:0;
+    margin:0;
+}
+/* ELEMENTS */
+body{
+    background: var(--color-bg);
+    color:var(--color-text);
+}
+/* OBJECTS */
+
+/* COMPONENTS */
+
+/* TRUMPS */
+
+/* HACKS */
